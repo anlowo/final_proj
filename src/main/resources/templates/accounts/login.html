@@ -1,0 +1,11 @@
+<h2>Log in to the Library!</h2>
+<form class="element-list" th:action="@{/login/authenticate}" onsubmit="return true" method="post">
+  <label for="email">Email</label>
+  <input class="button-style" type="text" placeholder="Enter your email" name="email">
+  <label for="password">Password</label>
+  <input class="button-style" type="password" placeholder="Enter your Password" name="password">
+  <div th:if="${error}">
+    <p class="help-message error-message" th:text="${error}"></p>
+  </div>
+  <input class="clickable button-style" type="submit" value="Login"/>
+</form>

@@ -1,0 +1,11 @@
+li {
+    list-style-type: none;
+}
+.outer-content,element-list,help-message success-message,button-style,clickable button-style{
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+}
+body {
+    background: linear-gradient(90deg, #98d9f5, #b2ecf6);
+}
